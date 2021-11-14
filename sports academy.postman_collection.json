@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "6abd3f61-3077-446f-9127-a67cce26d36c",
+		"name": "sports academy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Coach kapildev login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"kapildev\",\r\n    \"password\": \"thebestcoach\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding kapildev first player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZCIsInVzZXJuYW1lIjoia2FwaWxkZXYiLCJwYXNzd29yZCI6IiQyYSQxMCROTVV6OC5hMW1tNWFFR2xkVlBoTld1NTFRcFVkdEN6TW9kNFBFZHJnOUE2d2VPYzZhL0VELiIsInJvbGUiOiJjb2FjaCJ9LCJpYXQiOjE2MzY4OTE4ODQsImV4cCI6MTYzNjk3ODI4NH0.sEY06v_pDrlTjDuoDR44X9u6ZmntNzL9g2VZrwkhFPQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"Saina Nehwal\",\r\n  \"matches_played\": 50,\r\n  \"wins\": 45,\r\n  \"losses\": 4,\r\n  \"draws\": 1,\r\n  \"sport\": \"Badminton\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding kapildev second player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZCIsInVzZXJuYW1lIjoia2FwaWxkZXYiLCJwYXNzd29yZCI6IiQyYSQxMCROTVV6OC5hMW1tNWFFR2xkVlBoTld1NTFRcFVkdEN6TW9kNFBFZHJnOUE2d2VPYzZhL0VELiIsInJvbGUiOiJjb2FjaCJ9LCJpYXQiOjE2MzY4OTE4ODQsImV4cCI6MTYzNjk3ODI4NH0.sEY06v_pDrlTjDuoDR44X9u6ZmntNzL9g2VZrwkhFPQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Virat Kohli\",\r\n  \"matches_played\": 200,\r\n  \"wins\": 125,\r\n  \"losses\": 73,\r\n  \"draws\": 2,\r\n  \"sport\": \"Cricket\"\r\n  }"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding kapildev third player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZCIsInVzZXJuYW1lIjoia2FwaWxkZXYiLCJwYXNzd29yZCI6IiQyYSQxMCROTVV6OC5hMW1tNWFFR2xkVlBoTld1NTFRcFVkdEN6TW9kNFBFZHJnOUE2d2VPYzZhL0VELiIsInJvbGUiOiJjb2FjaCJ9LCJpYXQiOjE2MzY4OTE4ODQsImV4cCI6MTYzNjk3ODI4NH0.sEY06v_pDrlTjDuoDR44X9u6ZmntNzL9g2VZrwkhFPQ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chirag Shetty\",\r\n  \"matches_played\": 100,\r\n  \"wins\": 95,\r\n  \"losses\": 5,\r\n  \"draws\": 0,\r\n  \"sport\": \"Badminton\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding kapildev fourth player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZCIsInVzZXJuYW1lIjoia2FwaWxkZXYiLCJwYXNzd29yZCI6IiQyYSQxMCROTVV6OC5hMW1tNWFFR2xkVlBoTld1NTFRcFVkdEN6TW9kNFBFZHJnOUE2d2VPYzZhL0VELiIsInJvbGUiOiJjb2FjaCJ9LCJpYXQiOjE2MzY4OTE4ODQsImV4cCI6MTYzNjk3ODI4NH0.sEY06v_pDrlTjDuoDR44X9u6ZmntNzL9g2VZrwkhFPQ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Satwiksairaj Rankireddy\",\r\n  \"matches_played\": 50,\r\n  \"wins\": 35,\r\n  \"losses\": 10,\r\n  \"draws\": 5,\r\n  \"sport\": \"Cricket\"\r\n  }"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coach pullela login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"pullela\",\r\n    \"password\": \"bestcoach\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding pullela first player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZiIsInVzZXJuYW1lIjoicHVsbGVsYSIsInBhc3N3b3JkIjoiJDJhJDEwJDN3U1F4Ung4ZnphajVDVDJUQVpraU9OQmY0Q0lBRFE1WWRrMWE5dkoyWFg2M2V3aldjZkxHIiwicm9sZSI6ImNvYWNoIn0sImlhdCI6MTYzNjg5MjYxMiwiZXhwIjoxNjM2OTc5MDEyfQ.2QORAWdfBTCGWuryb9ZnnVaAcWCqGwE7O9Wz4lvq-sY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Parupalli Kashyap\",\r\n  \"matches_played\": 75,\r\n  \"wins\": 60,\r\n  \"losses\": 10,\r\n  \"draws\": 5,\r\n  \"sport\": \"Badminton\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding pullela second player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZiIsInVzZXJuYW1lIjoicHVsbGVsYSIsInBhc3N3b3JkIjoiJDJhJDEwJDN3U1F4Ung4ZnphajVDVDJUQVpraU9OQmY0Q0lBRFE1WWRrMWE5dkoyWFg2M2V3aldjZkxHIiwicm9sZSI6ImNvYWNoIn0sImlhdCI6MTYzNjg5MjYxMiwiZXhwIjoxNjM2OTc5MDEyfQ.2QORAWdfBTCGWuryb9ZnnVaAcWCqGwE7O9Wz4lvq-sY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"Rahul Dravid\",\r\n  \"matches_played\": 42,\r\n  \"wins\": 40,\r\n  \"losses\": 2,\r\n  \"draws\": 0,\r\n  \"sport\": \"Cricket\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding pullela third player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZiIsInVzZXJuYW1lIjoicHVsbGVsYSIsInBhc3N3b3JkIjoiJDJhJDEwJDN3U1F4Ung4ZnphajVDVDJUQVpraU9OQmY0Q0lBRFE1WWRrMWE5dkoyWFg2M2V3aldjZkxHIiwicm9sZSI6ImNvYWNoIn0sImlhdCI6MTYzNjg5MjYxMiwiZXhwIjoxNjM2OTc5MDEyfQ.2QORAWdfBTCGWuryb9ZnnVaAcWCqGwE7O9Wz4lvq-sY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sourav Ganguly\",\r\n  \"matches_played\": 500,\r\n  \"wins\": 372,\r\n  \"losses\": 101,\r\n  \"draws\": 27,\r\n  \"sport\": \"Cricket\"\r\n  }"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding pullela fourth player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZiIsInVzZXJuYW1lIjoicHVsbGVsYSIsInBhc3N3b3JkIjoiJDJhJDEwJDN3U1F4Ung4ZnphajVDVDJUQVpraU9OQmY0Q0lBRFE1WWRrMWE5dkoyWFg2M2V3aldjZkxHIiwicm9sZSI6ImNvYWNoIn0sImlhdCI6MTYzNjg5MjYxMiwiZXhwIjoxNjM2OTc5MDEyfQ.2QORAWdfBTCGWuryb9ZnnVaAcWCqGwE7O9Wz4lvq-sY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shubhash Kumar\",\r\n  \"matches_played\": 40,\r\n  \"wins\": 37,\r\n  \"losses\": 3,\r\n  \"draws\": 0,\r\n  \"sport\": \"Badminton\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mainman\",\r\n    \"password\": \"bestadmin\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin fetching all players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZSIsInVzZXJuYW1lIjoibWFpbm1hbiIsInBhc3N3b3JkIjoiJDJhJDEwJG5lR2poU3BCR3UwRFN2ZFNpQW1ENk8weHBubkhMbTlKQmpwUjQuajMzZGM1WVpoNFZpY3lDIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTYzNjg5MzAxOSwiZXhwIjoxNjM2OTc5NDE5fQ.LpVuZXHrVWjY-CslnRbfUZLhnlWtkhfVhw5GbD7AOgg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000",
+					"host": [
+						"localhost"
+					],
+					"port": "9000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin fetching cricket players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZSIsInVzZXJuYW1lIjoibWFpbm1hbiIsInBhc3N3b3JkIjoiJDJhJDEwJG5lR2poU3BCR3UwRFN2ZFNpQW1ENk8weHBubkhMbTlKQmpwUjQuajMzZGM1WVpoNFZpY3lDIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTYzNjg5MzAxOSwiZXhwIjoxNjM2OTc5NDE5fQ.LpVuZXHrVWjY-CslnRbfUZLhnlWtkhfVhw5GbD7AOgg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/?sport=Cricket",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "sport",
+							"value": "Cricket"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin fetching badminton players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZSIsInVzZXJuYW1lIjoibWFpbm1hbiIsInBhc3N3b3JkIjoiJDJhJDEwJG5lR2poU3BCR3UwRFN2ZFNpQW1ENk8weHBubkhMbTlKQmpwUjQuajMzZGM1WVpoNFZpY3lDIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTYzNjg5MzAxOSwiZXhwIjoxNjM2OTc5NDE5fQ.LpVuZXHrVWjY-CslnRbfUZLhnlWtkhfVhw5GbD7AOgg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/?sport=Badminton",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "sport",
+							"value": "Badminton"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coach kapildev fetching badminton players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZCIsInVzZXJuYW1lIjoia2FwaWxkZXYiLCJwYXNzd29yZCI6IiQyYSQxMCROTVV6OC5hMW1tNWFFR2xkVlBoTld1NTFRcFVkdEN6TW9kNFBFZHJnOUE2d2VPYzZhL0VELiIsInJvbGUiOiJjb2FjaCJ9LCJpYXQiOjE2MzY4OTE4ODQsImV4cCI6MTYzNjk3ODI4NH0.sEY06v_pDrlTjDuoDR44X9u6ZmntNzL9g2VZrwkhFPQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/?sport=Badminton",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "sport",
+							"value": "Badminton"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coach kapildev fetching player by name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZCIsInVzZXJuYW1lIjoia2FwaWxkZXYiLCJwYXNzd29yZCI6IiQyYSQxMCROTVV6OC5hMW1tNWFFR2xkVlBoTld1NTFRcFVkdEN6TW9kNFBFZHJnOUE2d2VPYzZhL0VELiIsInJvbGUiOiJjb2FjaCJ9LCJpYXQiOjE2MzY4OTE4ODQsImV4cCI6MTYzNjk3ODI4NH0.sEY06v_pDrlTjDuoDR44X9u6ZmntNzL9g2VZrwkhFPQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/?name=Virat Kohli",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Virat Kohli"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coach pullela fetching cricket players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZiIsInVzZXJuYW1lIjoicHVsbGVsYSIsInBhc3N3b3JkIjoiJDJhJDEwJDN3U1F4Ung4ZnphajVDVDJUQVpraU9OQmY0Q0lBRFE1WWRrMWE5dkoyWFg2M2V3aldjZkxHIiwicm9sZSI6ImNvYWNoIn0sImlhdCI6MTYzNjg5MjYxMiwiZXhwIjoxNjM2OTc5MDEyfQ.2QORAWdfBTCGWuryb9ZnnVaAcWCqGwE7O9Wz4lvq-sY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/?sport=Cricket",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "sport",
+							"value": "Cricket"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coach pullela fetching badminton players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxOTBmY2QzNDA1YTE3MDY3YzE0MWUxZiIsInVzZXJuYW1lIjoicHVsbGVsYSIsInBhc3N3b3JkIjoiJDJhJDEwJDN3U1F4Ung4ZnphajVDVDJUQVpraU9OQmY0Q0lBRFE1WWRrMWE5dkoyWFg2M2V3aldjZkxHIiwicm9sZSI6ImNvYWNoIn0sImlhdCI6MTYzNjg5MjYxMiwiZXhwIjoxNjM2OTc5MDEyfQ.2QORAWdfBTCGWuryb9ZnnVaAcWCqGwE7O9Wz4lvq-sY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/?sport=Badminton",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "sport",
+							"value": "Badminton"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
