@@ -1,26 +1,26 @@
-module.exports = (app, playerQueries, verify) => {
+const { verifyToken } = require('../jwt');
 
-    const jwt = require('jsonwebtoken');
+module.exports = (app, playerQueries) => {
+
     const mongoose = require('mongoose');
 
-    app.get('/', verify, async (req,res)=>{
-        let {name, sport} = req.query;
-        jwt.verify(req.token, 'secretkey', async (err, authData) => {
-            if(err) {
-                return res.sendStatus(403);
-            } 
-            let searchCriteria = {};
-            if(authData.user.role === 'coach'){
-                searchCriteria["coach_id"] = mongoose.Types.ObjectId(authData.user._id);
-            }
-            if(name) {
-                searchCriteria["name"] = name;
-            }
-            if(sport) {
-                searchCriteria["sport"] = sport;
-            }
-            const players = await playerQueries.getPlayers(searchCriteria);
-            res.json(players);
-        })
+    app.get('/', verifyToken, async (req,res)=>{
+        fetchPlayers(req,res);
     })
+    
+    async function fetchPlayers(req,res){
+        let {name, sport} = req.query;
+        let searchCriteria = {};
+        if(req.authData.user.role === 'coach'){
+            searchCriteria["coach_id"] = mongoose.Types.ObjectId(req.authData.user._id);
+        }
+        if(name) {
+            searchCriteria["name"] = name;
+        }
+        if(sport) {
+            searchCriteria["sport"] = sport;
+        }
+        const players = await playerQueries.getPlayers(searchCriteria);
+        res.json(players);
+    }
 }

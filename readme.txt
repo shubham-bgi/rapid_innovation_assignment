@@ -1,4 +1,4 @@
-Stack Used - NodeJS, MongoDB, Mongoose, ExpressJS, Bcrypt, JWT
+Stack Used - NodeJS(v16.13.0), MongoDB, Mongoose, ExpressJS, Bcrypt, JWT
 
 Database - sportsacademy
 Collections - 1) Credentials 2) Players
@@ -21,7 +21,7 @@ Data to populate Credentials collection NEEDS TO BE ADDED TO ACCESS THE COLLECTI
 }]
 
 start application by 'npm start'
-You can use postman collection from here on, postman collection json in this folder only...
+You can use postman collection from here on, postman collection json is in this repo only...
 
 Credentials to login
 {

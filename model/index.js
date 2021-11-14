@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/sportsacademy", { useNewUrlParser: true, useUnifiedTopology: true } , (e,db) =>{
+mongoose.connect("mongodb://localhost:27017/sportsacademy", 
+{ useNewUrlParser: true, useUnifiedTopology: true } , (e,db) =>{
     if(e) {
         console.log('Error - ',e.stack);
     }
